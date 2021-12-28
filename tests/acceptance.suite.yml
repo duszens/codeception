@@ -1,0 +1,20 @@
+# acceptance.suite.yml
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver
+        - Asserts
+        - PhpBrowser
+    config:
+        WebDriver:
+            browser: chrome
+            window_size: maximize
+            url: 'https://test-shoper-210611-1-2c4b1c27-130327.qashoper.eu/'
+            host: 'localhost'
+            port: '4444'
+        #capabilities: {
+         # browserName: 'chrome',
+          #'goog:chromeOptions': {
+           # args: ['--no-sandbox', '--headless']
+          #}
+        #}

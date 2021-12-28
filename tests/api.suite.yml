@@ -1,0 +1,17 @@
+actor: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - REST
+    config:
+        REST:
+            depends: PhpBrowser                             
+            url: 'https://test-shoper-210611-1-2c4b1c27-130327.qashoper.eu'                    
+            shortDebugResponse: 300 
+            
+  
+    REST:
+            url: 'https://test-shoper-210611-1-2c4b1c27-130327.qashoper.eu/'
+            depends: PhpBrowser
+            part: Json
+

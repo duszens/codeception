@@ -1,0 +1,2284 @@
+<html data-version="5.0.210611" class="ctrl-customers actn-edit browser_chrome browser_chrome_96 browser_platform_linux browser_mobile_0 browser_ie67_0 browser_ie678_0" lang="pl" slick-uniqueid="3" style="--vh:5.53px;"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="language" content="pl">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+        <title>Klienci - Panel Administracyjny</title>
+
+        <!-- generics -->
+        <link rel="icon" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-128x128.png" sizes="128x128">
+        <link rel="icon" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-192x192.png" sizes="192x192">
+
+        <!-- Android -->
+        <link rel="shortcut icon" sizes="196x196" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-196x196.png">
+
+        <!-- iOS -->
+        <link rel="apple-touch-icon" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-152x152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-167x167.png" sizes="167x167">
+        <link rel="apple-touch-icon" href="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/favicon-180x180.png" sizes="180x180">
+
+        <link rel="manifest" href="/userdata/public/admin-manifest.json">
+        <link rel="home" href="/">
+        <link rel="dns-prefetch" href="//dcsaascdn.net">
+        <link rel="preconnect" href="//dcsaascdn.net">
+        <link rel="preload" as="font" crossorigin="true" type="font/woff2" href="https://dcsaascdn.net/fonts/source-sans-pro-regular.woff">
+        <link rel="preload" as="font" crossorigin="true" type="font/woff2" href="https://dcsaascdn.net/fonts/source-sans-pro-regular-extended.woff">
+        <link rel="preload" as="font" crossorigin="true" type="font/woff2" href="https://dcsaascdn.net/fonts/source-sans-pro-semibold.woff">
+        <link rel="preload" as="font" crossorigin="true" type="font/woff2" href="https://dcsaascdn.net/fonts/source-sans-pro-semibold-extended.woff">
+        <link rel="preload" as="font" crossorigin="true" type="font/woff2" href="https://dcsaascdn.net/fonts/source-sans-pro-bold.woff">
+        <link rel="preload" as="font" crossorigin="true" type="font/woff2" href="https://dcsaascdn.net/fonts/source-sans-pro-bold-extended.woff">
+		<link rel="stylesheet" id="aurora-styles" href="//dcsaascdn.net/aurora/dist/mitra/shoper_dark/2.0.1.397/css/aurora.min.css" type="text/css">
+
+                <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MTHHDW"></script><script src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/preinit.bundle.js?5.0.210611"></script>
+        <style>
+    .moxman-floatpanel.moxman-menu-has-icons .moxman-container-body.moxman-stack-layout > div:nth-child(5), 
+    .moxman-floatpanel.moxman-menu-has-icons .moxman-container-body.moxman-stack-layout > div:nth-child(6), 
+    .moxman-floatpanel.moxman-menu-has-icons .moxman-container-body.moxman-stack-layout > div:nth-child(8), 
+    .moxman-floatpanel.moxman-menu-has-icons .moxman-container-body.moxman-stack-layout > div:nth-child(9), 
+    .moxman-floatpanel.moxman-menu-has-icons .moxman-container-body.moxman-stack-layout > div:nth-child(10), 
+    .moxman-floatpanel.moxman-menu-has-icons .moxman-container-body.moxman-stack-layout > div:nth-child(11) {
+        display: none;
+    }
+</style>   
+    <script charset="utf-8" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/module.201.d5946c.bundle.js"></script><script charset="utf-8" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/module.964.5e042d.bundle.js"></script><script charset="utf-8" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/module.880.c5d647.bundle.js"></script><script charset="utf-8" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/module.828.57f2e7.bundle.js"></script><script charset="utf-8" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/module.872.40a344.bundle.js"></script><script charset="utf-8" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/module.1058.c7b9b2.bundle.js"></script></head>
+
+    <body data-decimal-sep="," data-thousand-sep="" data-domain="test-shoper-210611-1-2c4b1c27-130327.qashoper.eu" data-shop="1639574601318798" data-features="WyJxYV90ZXN0IiwicHJvZHVjdF9idW5kbGVzIiwid2ViZGF2Iiwic2Fhc19iaWxsaW5nIiwicmVkaXJlY3RzX2NvbmZpZyIsInJlZGlyZWN0c19kb21haW5zIiwicmVkaXJlY3RzX29iamVjdHMiLCJyZWRpcmVjdHNfcm91dGVyIiwicmVkaXJlY3RzX2FwaSIsImFsbGVncm9fZG93bmxvYWRfb3JkZXJzIiwiYWxsZWdyb19pbXBvcnRfYXVjdGlvbnMiLCJhbGxlZ3JvX2F1dG9faW1wb3J0X2F1Y3Rpb25zIiwiYWxsZWdyb191cGRhdGVfYXVjdGlvbnMiLCJwd2EiLCJhbGxlZ3JvX3NlbmRfc2hpcHBpbmdfbnVtYmVyIiwic2VvX2dmeCIsInNob3dfcHJlbWl1bV9mZWF0dXJlcyIsInJlY29tbWVuZGF0aW9uc190cmFja2luZyIsIm5icF9jdXJyZW5jaWVzIiwiYmVsbF9tZXNzYWdlcyIsImlucG9zdF9tYXAiLCJwYWN6a29tYXR5X2Rpc2FibGUiLCJhbGxlZ3JvX2Rvd25sb2FkX29yZGVyc19zdXJjaGFyZ2VzIiwiYWxsZWdyb19vcmRlcl9hbmRfdHJhbnNhY3Rpb25fdWlkX2ZpbHRlcnMiLCJhbGxlZ3JvX2Rvd25sb2FkX29yZGVyc19hZGRpdGlvbmFsX3NlcnZpY2VzIiwiYWxsZWdyb191cGRhdGVfcXVhbnRpdHlfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX3VwZGF0ZV9wcmljZV9tdWx0aWFjdGlvbiIsInR3b19mYWN0b3IiLCJ0d29fZmFjdG9yX3NtcyIsImFsbGVncm9fdGVtcGxhdGVfZXh0ZW5kZWQiLCJwcm9kdWN0X2R1cGxpY2F0ZV9uZXdfb3B0aW9ucyIsIndlYnB1c2hfYWRtaW4iLCJkZWZhdWx0X2ZpbHRlcl9wcm9maWxlcyIsImZpbGVfbWFuYWdlbWVudCIsImlucG9zdF9wd3ciLCJ0cmFmZmljX2FuYWx5emVyIiwic2VhcmNoX2FkbWluIiwic2VhcmNoX2NsaWVudCIsInNlYXJjaF9pbmRleGVyIiwiYXVyb3JhX3JlZmFjdG9yaW5nIiwiYWxsZWdyb19zdGF0dXNfbWFwIiwiZ3R1X2NvZGUiLCJuZXdfZGF0ZXBpY2tlciIsInZhdF9ldSIsIm5ld19hbGxlZ3JvX3RlbXBsYXRlX2NyZWF0b3IiLCJhbGxlZ3JvX2RldGVjdF9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2Fzc2lnbl9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2F1Y3Rpb25zX2hhc19hbGxlZ3JvX3Byb2R1Y3RfZmlsdGVycyIsImFsbGVncm9fcHJvZHVjdHNfaGFzX2FsbGVncm9fcHJvZHVjdF9maWx0ZXJzIiwibmV3X2dhbGxlcnkiLCJkaWdpdGFsX2xpbmtzIiwiY29sbGVjdGlvbnMiLCJhbGxlZ3JvX3RocmVhZHNhZmUiLCJwcm9ncmVzc190aHJlYWRzYWZlIiwiYWxsZWdyb19sb2NrX3Byb2Nlc3MiLCJhbGxlZ3JvX3Byb2dyZXNzX3ZhbGlkYXRpb25fZXJyb3IiXQ==" data-locale="pl" data-admin-id="1">
+
+
+<div class="container container_full">
+	<div class="row row_no-wrap">
+		<nav class="ui__sidebar ui__sidebar_bg_gradient">
+	<header class="ui__header mr-1 row row_vcenter hidden-md-down">
+		<div class="col_auto mr-1">
+			<div class="box box_spacing-s pr-0">
+				<figure class="ml-1 mt-1">
+					<a href="/admin/dashboard">
+						<img class="ui__logo" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/logo-on-dark.svg" alt="Panel administracyjny">
+					</a>
+				</figure>
+			</div>
+		</div>
+
+					<div class="col_auto">
+				<a class="link link_no-hover color_on-dark-bg size_xxs mr-1" href="/admin/orders/list#/filter_status/1">
+						<span class="tag tag_v6 tag_s p-all-1">
+							<span class="tooltip">
+								<span class="align_middle">
+									<span class="icon icon-plus-note size_s mr-1 color_light icon_link"></span>1
+								</span>
+
+								<span class="tooltip__container">
+									nowe
+								</span>
+							</span>
+						</span>
+					</a>
+
+				<a class="link link_no-hover color_on-dark-bg size_xxs" href="/admin/orders/list#/filter_status/2,3,4,5,6">
+						<span class="tag tag_v6 tag_s p-all-1">
+							<span class="tooltip">
+								<span class="align_middle">
+									<span class="icon icon-hourglass size_s mr-1 color_light icon_link"></span>1
+								</span>
+
+								<span class="tooltip__container">
+									w realizacji
+								</span>
+							</span>
+						</span>
+				</a>
+			</div>
+		
+		<div class="col_auto hide js__show-on-shrinked-menu">
+			<div class="box box_spacing-s pr-0">
+				<figure class="ml-1 mt-1">
+					<a href="/admin/dashboard">
+						<img class="img img_max-height-xxs" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/signet-shoper-white.svg" alt="Panel administracyjny">
+					</a>
+				</figure>
+			</div>
+		</div>
+	</header>
+
+	<div class="row row_inner">
+		<div class="col_grow">
+			<div class="box box_spacing-s">
+				<div class="row row_vcenter row_hcenter">
+					<div class="col_grow js__sidebar-domain">
+						<a class="link color_light" target="_blank" rel="noopener" href="/admin/preview/store/">
+								test-shoper-21061...
+						</a>
+					</div>
+
+					<div class="col_auto hidden-md-down">
+						<div class="js__main-menu-toggler pr-1">
+							<span class="icon icon_link icon-hide-menu size_l color_light"></span>
+						</div>
+					</div>
+
+					<div class="col_auto hidden-lg-up">
+						    <ul class="list list_inline">
+        <li>
+            <div class="row row_vcenter">
+                <div class="col_auto">
+                    <div class="content-lang-changer"><div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><div role="button" class="select select_light"><span class="tooltip tooltip_top tooltip_left"><span><span class="control_select control_s control_inline control color_light"><img src="/libraries/flags/pl_PL.png" alt="pl_PL" class=""> PL
+									</span></span> <span class="tooltip__container">
+									polski / Polska 
+								</span></span></div></div> <!----> </div></div>
+                </div>
+
+                            </div>
+        </li>
+    </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col_grow">
+			<ul class="list list_inline list_inline-spacing_m list_inline-vcenter ml-3 mr-2 hidden-lg-up">
+									<li>
+						<div class="bell-notificator"><div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><span data-jewel-count="1" class=""><span class="icon icon_link icon-gift color_light size_xl"></span></span></div> <!----> </div></div>
+					</li>
+				
+				<li class="color_light">
+					<span class="jewel jewel_v4 jewel_s jewel_top-right" data-jewel-count="10">
+							<a class="icon icon-mail color_light size_l" href="/admin/messages/list" title="messages list">
+							</a>
+					</span>
+				</li>
+
+				<li>
+					<a class="icon icon-queue color_light size_xl" href="/admin/progress/list" title="progress list">
+					</a>
+				</li>
+
+				<li class="color_light">
+					<div class="row row_vcenter">
+						<div class="col_auto">
+							<span class="marker marker_l marker_v5 marker_round">
+								A
+							</span>
+						</div>
+
+						<div class="col_auto">
+							<div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><span class="link caret uppercase weight_semibold size_xs color_light">admin</span></div> <!----> </div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="main-menu " id="main-nav">
+    <li class="main-menu__li_open">
+        <header class="main-menu__section-header js__menu-toggler main-menu__section-header_primary-selected js__toggler-active"><span id="mitrasidebarmenu-section-shop-service" class="icon mr-2 color_light icon-cart"></span><span class="js__main-menu-section-name">Obsługa sklepu</span></header>
+        <ul class="js__menu main-menu__list js__main-top-lvl main-menu__list_border-left">
+            <li>
+                <a id="mitrasidebarmenu-dashboard" class="main-menu__link" href="/admin">Pulpit</a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-section-orders" class="main-menu__header">Zamówienia</span>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a id="mitrasidebarmenu-orders" class="main-menu__link" href="/admin/orders">Zamówienia</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/orders/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj zamówienie</span></span></a>
+            </li>
+            <li class="main-menu__li_inline">
+                <a id="mitrasidebarmenu-orders-new" class="main-menu__link" href="/admin/orders/list/mode/new#/filter_status/1/sort/default/order/default/page/1/limit/20">Nowe</a><span class="tag tag_v6 color_on-dark-bg">1</span>
+            </li>
+            <li class="main-menu__li_inline">
+                <a id="mitrasidebarmenu-orders-in-progress" class="main-menu__link" href="/admin/orders/list/mode/open#/filter_status/2,3,4,5,6/sort/default/order/default/page/1/limit/20">W trakcie realizacji</a><span class="tag tag_v6 color_on-dark-bg">1</span>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-parcels" class="main-menu__link" href="/admin/parcels">Przesyłki</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-baskets" class="main-menu__link" href="/admin/baskets">Koszyki klientów</a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-orders-related" class="main-menu__link js__menu-toggler">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/orders"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Statystyki zamówień</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/mailinghistory"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Historia maili</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configEmails"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Szablony wiadomości automatycznych</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configShopping"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia zamówień i koszyka</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configPayments"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia płatności</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configInvoices"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia faktur</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configStatuses"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia statusów zamówień</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configShippings"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia dostaw</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a id="mitrasidebarmenu-orders-tags" class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/ordersTags"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Tagi zamówienia</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-section-assortment" class="main-menu__header">Produkty</span>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a id="mitrasidebarmenu-products" class="main-menu__link" href="/admin/stock">Produkty</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/products/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj produkt</span></span></a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-auctions" class="main-menu__link" href="/admin/auction">Aukcje</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-basketproducts" class="main-menu__link" href="/admin/basketproducts">Obecnie w koszykach klientów</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-attributes" class="main-menu__link" href="/admin/attributes">Atrybuty (cechy produktu)</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-options" class="main-menu__link" href="/admin/options">Warianty</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-categories" class="main-menu__link" href="/admin/categories">Kategorie</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-collections" class="main-menu__link" href="/admin/collections">Kolekcje</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-vendors" class="main-menu__link" href="/admin/producers">Producenci</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-comments" class="main-menu__link" href="/admin/comments">Opinie nt. produktów</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-raports-availability" class="main-menu__link" href="/admin/raports/availability">Zapisy na "Powiadom mnie"</a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-products-related" class="main-menu__link js__menu-toggler">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/compareprices"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Porównywarki produktów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/frequentlyPurchased"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Najczęściej kupowane produkty</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/frequentlyViewed"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Najczęściej oglądane produkty</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/searchTerms"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Szukane frazy</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configProducts"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia produktów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/integrations"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia Allegro</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configTax"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia stawek VAT</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configAvailabilities"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia stanów dostępności produktów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configSearch"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia wyszukiwarki</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configComments"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia opinii nt. produktów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a id="mitrasidebarmenu-products-tags" class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/productsTags"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Tagi produktu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-section-customers" class="main-menu__header">Klienci</span>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a id="mitrasidebarmenu-customers" class="main-menu__link main-menu__link_active" href="/admin/customers">Klienci</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/customers/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj Klienta</span></span></a>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a class="main-menu__link" href="/admin/groups">Grupy klientów</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/groups/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj grupę klientów</span></span></a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-customers-related" class="main-menu__link js__menu-toggler">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/newCustomers"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Statystyki rejestracji</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/customersPurchases"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Statystyki zamówień klientów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/subscribers"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Subskrybenci</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configRegistering"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia rejestracji klientów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a id="mitrasidebarmenu-customers-tags" class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/customersTags"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Tagi klientów</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <header class="main-menu__section-header js__menu-toggler"><span id="mitrasidebarmenu-section-increase-selling" class="icon mr-2 color_light icon-increase-selling"></span><span class="js__main-menu-section-name">Zwiększaj sprzedaż</span></header>
+        <ul class="js__menu main-menu__list js__main-top-lvl main-menu__list_border-left main-menu__list_collapsed">
+            <li>
+                <span class="main-menu__link js__menu-toggler">Marketing Automation<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/plugin/execute/plugin/ShoperCampaigns-Campaigns/act/index">Kampanie</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/plugin/execute/plugin/ShoperCampaigns-Campaigns/act/googleAds">Google Ads</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/plugin/execute/plugin/ShoperCampaigns-Campaigns/act/facebookAds">Facebook Ads</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-promotions-discounts" class="main-menu__link js__menu-toggler">Promocje i rabaty<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/promotions">Promocje</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/potd">Produkty dnia</a>
+                    </li>
+                    <li class="main-menu__li_inline main-menu__li_with-action">
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/promoCodes">Kupony rabatowe</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/promoCodes/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj kupon rabatowy</span></span></a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/userDiscount">Rabaty indywidualne</a>
+                    </li>
+                    <li class="main-menu__li_inline main-menu__li_with-action">
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/priceLevels">Progi rabatowe</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/priceLevels/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj próg rabatowy</span></span></a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configDiscounts">Ustawienia rabatów</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-newsletter" class="main-menu__link js__menu-toggler">Newsletter<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_inline main-menu__li_with-action">
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/mailing">Newslettery</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/mailing/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj newsletter</span></span></a>
+                    </li>
+                    <li class="main-menu__li_inline main-menu__li_with-action">
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/subscribers">Subskrybenci</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/subscribers/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj subskrybenta</span></span></a>
+                    </li>
+                    <li class="main-menu__li_inline main-menu__li_with-action">
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/subscribersgroups">Grupy subskrybentów</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/subscribersgroups/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj grupę subskrybentów</span></span></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/configLoyalty">Program lojalnościowy</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/compareprices">Porównywarki cen</a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-increase-selling-related" class="main-menu__link js__menu-toggler">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configSeo"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>SEO</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/baskets"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Koszyki klientów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/comments"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Opinie nt. produktów</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/pwa"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Aplikacja mobilna PWA</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/raports/availability"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Zapisy na "Powiadom mnie"</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/customers"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Klienci</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <header class="main-menu__section-header js__menu-toggler"><span id="mitrasidebarmenu-section-report-statistics" class="icon mr-2 color_light icon-raport"></span><span class="js__main-menu-section-name">Raporty i statystyki</span></header>
+        <ul class="js__menu main-menu__list js__main-top-lvl main-menu__list_border-left main-menu__list_collapsed">
+            <li>
+                <a class="main-menu__link" href="/admin/raports/orders">Statystyki zamówień</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/ordersByType">Statystyki zamówień wg typu</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/delivery">Statystyki form dostawy</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/payments">Statystyki form płatności</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/newCustomers">Statystyki rejestracji</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/customersPurchases">Najaktywniejsi klienci</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/frequentlyViewed">Najczęściej oglądane produkty</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/frequentlyPurchased">Najczęściej kupowane produkty</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/raports/searchTerms">Najczęściej wyszukiwane hasła</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/plugin/execute/plugin/SaasTraffic-Hosting/act/traffic">Statystyki ruchu w sklepie</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <header class="main-menu__section-header js__menu-toggler"><span id="mitrasidebarmenu-section-appearance-content" class="icon mr-2 color_light icon-img"></span><span class="js__main-menu-section-name">Wygląd i treści</span></header>
+        <ul class="js__menu main-menu__list js__main-top-lvl main-menu__list_border-left main-menu__list_collapsed">
+            <li>
+                <span id="mitrasidebarmenu-shop-appearance" class="main-menu__link js__menu-toggler">Wygląd sklepu<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configSkins/edit/id/2">Obecny szablon graficzny</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/plugin/execute/plugin/SkinStore-Themes/act/list">Sklep ze stylami graficznymi</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configSkins">Twoje szablony graficzne</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-blog" class="main-menu__link js__menu-toggler">Blog<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_inline main-menu__li_with-action">
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/news">Lista wpisów</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/news/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj wpis na blogu</span></span></a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/newsCategories">Kategorie wpisów</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/newsTags">Tagi</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/newsComments">Komentarze</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configBlog">Ustawienia bloga</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/configSkins/links">Linki w nagłówku i stopce</a>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a class="main-menu__link" href="/admin/banners">Banery promocyjne</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/banners/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj baner</span></span></a>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a class="main-menu__link" href="/admin/configInfoPages">Strony informacyjne</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/configInfoPages/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj stronę</span></span></a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/configEmails">Szablony wiadomości automatycznych</a>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a class="main-menu__link" href="/admin/links">Rekomendowane strony</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/links/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj stronę rekomendowaną</span></span></a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/pwa">Aplikacja mobilna PWA</a>
+            </li>
+            <li class="main-menu__li_inline main-menu__li_with-action">
+                <a class="main-menu__link" href="/admin/configAdditionalFields">Dodatkowe pola formularzy</a>
+<a class="pl-2 main-menu__action-icon" href="/admin/configAdditionalFields/add"><span class="tooltip"><span class="tag tag_v6 tag_round-s color_light-4"><span class="icon icon-plus size_xxs color_on-dark-bg"></span></span><span class="tooltip__container">dodaj dodatkowe pole formularza</span></span></a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-increase-selling-related" class="main-menu__link js__menu-toggler">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configSearch"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Ustawienia wyszukiwarki</a>
+                    </li>
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/categories"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Kategorie</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <header class="main-menu__section-header js__menu-toggler"><span id="mitrasidebarmenu-section-extra-integrations" class="icon mr-2 color_light icon-window"></span><span class="js__main-menu-section-name">Dodatki i integracje</span></header>
+        <ul class="js__menu main-menu__list js__main-top-lvl main-menu__list_border-left main-menu__list_collapsed">
+            <li>
+                <a class="main-menu__link" href="/admin/integrations">Allegro</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-integrations" class="main-menu__link" href="/admin/partners">Integracje z partnerami</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/myintegrations">Integracje własne</a>
+            </li>
+            <li>
+                <a id="mitrasidebarmenu-other-integrations" class="main-menu__link" href="/admin/other-integrations">Inne integracje</a>
+            </li>
+            <li>
+                <a class="main-menu__link" href="/admin/webhooks">Webhooki</a>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-extra-integrations-related" class="main-menu__link js__menu-toggler">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li class="main-menu__li_with-action">
+                        <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/compareprices"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Porównywarki cen</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <header class="main-menu__section-header js__menu-toggler"><span id="mitrasidebarmenu-section-settings" class="icon mr-2 color_light icon-gear-dash"></span><span class="js__main-menu-section-name">Ustawienia</span></header>
+        <ul class="js__menu main-menu__list js__main-top-lvl main-menu__list_border-left main-menu__list_collapsed">
+            <li>
+                <span id="mitrasidebarmenu-settings-common" class="main-menu__link js__menu-toggler">Ogólne<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/config">Nazwa i status sklepu</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/config/company">Dane firmy</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/admin/groupsList">Administratorzy sklepu</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configWebpush/list">Powiadomienia web push</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/plugin/execute/plugin/SaasDomains-Hosting/act/domains">Domeny</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/config/email">Adres email</a>
+                    </li>
+                    <li>
+                        <a id="mitrasidebarmenu-saas-mailbox-hosting-mails" class="main-menu__link_secondary main-menu__link" href="/admin/plugin/execute/plugin/SaasMailbox-Hosting/act/mails">Konta pocztowe</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/cache">Pamięć cache</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-settings-orders" class="main-menu__link js__menu-toggler">Obsługa zamówień<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configShopping">Zamówienia i koszyk</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configPayments">Formy płatności</a>
+                    </li>
+                    <li>
+                        <a id="mitrasidebarmenu-settings-orders-invoices" class="main-menu__link_secondary main-menu__link" href="/admin/configInvoices">Faktury</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configStatuses">Statusy zamówień</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configShippings">Formy dostawy</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configZones">Strefy dostaw</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configRegistering">Ustawienia rejestracji</a>
+                    </li>
+                    <li>
+                        <a id="mitrasidebarmenu-orders-tags" class="main-menu__link_secondary main-menu__link" href="/admin/ordersTags">Tagi zamówienia</a>
+                    </li>
+                    <li>
+                        <a id="mitrasidebarmenu-customers-tags" class="main-menu__link_secondary main-menu__link" href="/admin/customersTags">Tagi klientów</a>
+                    </li>
+                    <li>
+                        <span class="main-menu__link js__menu-toggler main-menu__link_secondary">Powiązane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 p-top-2 size_xxxs"></span></span>
+                        <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                            <li class="main-menu__li_with-action">
+                                <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configEmails"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Szablony wiadomości automatycznych</a>
+                            </li>
+                            <li class="main-menu__li_with-action">
+                                <a class="main-menu__link_inline-center-top main-menu__link_secondary-releated main-menu__link" href="/admin/configAdditionalFields"><span class="tooltip tooltip_left main-menu__action-icon main-menu__action-icon_pos-left">
+                        <span class="icon main-menu__icon_xs icon-front"></span>
+                    </span>Dodatkowe pola formularzy</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-settings-products" class="main-menu__link js__menu-toggler">Produkty<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configProducts">Ustawienia produktów</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configDeliveries">Czas wysyłki</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configSearch">Wyszukiwarka</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configTax">Ceny i stawki VAT</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configComments">Opinie nt. produktów</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configUnits">Jednostki miar</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configAvailabilities">Statusy dostępności produktów</a>
+                    </li>
+                    <li>
+                        <a id="mitrasidebarmenu-products-tags" class="main-menu__link_secondary main-menu__link" href="/admin/productsTags">Tagi produktu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-settings-regional" class="main-menu__link js__menu-toggler">Ustawienia regionalne<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configLocale">Strefa czasowa</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configCurrencies">Waluty</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configLanguages">Języki</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-settings-advanced" class="main-menu__link js__menu-toggler">Zaawansowane<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configCleanUp">Czyszczenie bazy danych</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configRedirects">Przekierowania</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/security">Bezpieczeństwo</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/file-management">Zarządzanie plikami</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/configSeo">SEO</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span id="mitrasidebarmenu-settings-history" class="main-menu__link js__menu-toggler">Zadania i historia maili<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/tasks">Historia zadań cyklicznych</a>
+                    </li>
+                    <li>
+                        <a class="main-menu__link_secondary main-menu__link" href="/admin/mailinghistory">Historia maili</a>
+                    </li>
+                    <li>
+                        <span class="main-menu__link js__menu-toggler main-menu__link_secondary">Menadżer postępu zaplanowanych zadań<span class="icon icon-arrow icon_rotate-90 p-all-1 ml-1 size_xxxs"></span></span>
+                        <ul class="js__menu main-menu__list main-menu__list-nested main-menu__list_collapsed">
+                            <li>
+                                <a class="main-menu__link_secondary main-menu__link" href="/admin/progress/current">Zadania zakolejkowane</a>
+                            </li>
+                            <li>
+                                <a class="main-menu__link_secondary main-menu__link" href="/admin/progress/list">Zakończone zadania</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>		</div>
+	</div>
+
+	<div class="progress-manager_absolute hidden-md-down"><div class="progress-manager"><div class="progress-manager__status-bar"><span class="icon icon-queue progress-manager__status-bar-icon"></span> <!----></div></div> <!----></div>
+
+	<div class="ui__lang-changer_absolute hidden-md-down">
+		    <ul class="list list_inline">
+        <li>
+            <div class="row row_vcenter">
+                <div class="col_auto">
+                    <div class="content-lang-changer"><div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><div role="button" class="select select_light"><span class="tooltip tooltip_top tooltip_left"><span><span class="control_select control_s control_inline control color_light"><img src="/libraries/flags/pl_PL.png" alt="pl_PL" class=""> PL
+									</span></span> <span class="tooltip__container">
+									polski / Polska 
+								</span></span></div></div> <!----> </div></div>
+                </div>
+
+                            </div>
+        </li>
+    </ul>
+	</div>
+</nav>
+
+<div class="progress-manager-mobile hidden-lg-up hide"><!----></div>
+		<main class="ui__main col_grow">
+			<header class="ui__header row row_hbetween row_vcenter">
+	<div class="col_auto hidden-lg-up">
+		<figure class="ml-1 mt-1">
+			<a href="/admin/dashboard">
+				<img width="21" src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Images/signet-shoper-white.svg" alt="Panel administracyjny">
+			</a>
+		</figure>
+	</div>
+
+			<div class="col_auto hidden-lg-up">
+			<div class="row">
+				<div class="col_auto">
+					<p class="align_center">
+						<a class="link color_on-dark-bg size_xxs" href="/admin/orders/list#/filter_status/1">
+								nowe
+								<span class="tag tag_v6 tag_s ml-1">1</span>
+						</a>
+					</p>
+				</div>
+
+				<div class="col_auto">
+					<p class="align_center">
+						<a class="link color_on-dark-bg size_xxs" href="/admin/orders/list#/filter_status/2,3,4,5,6">
+								w realizacji
+								<span class="tag tag_v6 tag_s ml-1">1</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	
+			<div class="col_auto mr-1 hidden-md-down">
+			<div class="bell-notificator"><div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><span data-jewel-count="1" class=""><span class="icon icon_link icon-gift color_light size_xl"></span></span></div> <!----> </div></div>
+		</div>
+	
+	<div class="col_auto hidden-md-down">
+		<span class="jewel jewel_v4 jewel_s jewel_top-right" data-jewel-count="10">
+				<a class="icon icon-mail icon_link color_light size_l" href="/admin/messages/list" title="messages list">
+				</a>
+		</span>
+	</div>
+
+	<div class="col_grow col_hend">
+		<nav class="search js__search" data-search-in="menus|orders|users|products|categories|producers|infoPages|news|subscribers|help|university">
+	<div class="search__input-area">
+		<label for="search-input">
+			<span class="icon icon-search"></span>
+		</label>
+
+		
+		
+		
+		<input maxlength="255" role="search" autocomplete="off" name="search" class="search__input" id="search-input" type="text" placeholder="Szukaj w zamówieniach, produktach, menu i pozostałych elementach">
+		
+		<div>
+			<span class="icon icon-x search__btn-clear hide" role="button" aria-label="clear input"></span>
+
+			<span class="tooltip js__search_hide-on-focus">
+				<span class="ml-1 color_light icon icon-key-f "></span>
+				<span class="tooltip__container">Klawisz F otwiera wyszukiwarkę</span>
+			</span>
+			<span class="js__search-loader a-loader hide"></span>
+		</div>
+	</div>
+
+	<section class="search__container">
+		<div data-search-scroll-area="history" class="search__item search__item_content js__search-scrollable-area search-history hide">
+			<div class="search__section">
+				<h3 class="search__head h6 head_line text_uppercase">
+					Ostatnie wyszukiwania
+				</h3>
+
+				<ul class="search-history__list"></ul>
+
+				<a class="link search__load-more hide" href="">Pokaż więcej ostatnio wyszukiwanych (<span class="js__search-load-more-count"></span>)</a>
+			</div>
+		</div>
+
+		<div data-search-scroll-area="results" class="search__item search__item_content js__search-scrollable-area js__result-container"></div>
+
+		
+		<div class="row">
+			<div class="col_grow">
+				<div class="js__message-container box box_spacing">
+					<div class="search__section row row_spacing js__search__message_first-search hide">
+						<h4 class="col_xs-12">
+							<div class="box box box_spacing-horizontal">
+								Wyszukaj w całym panelu!
+							</div>
+						</h4>
+						
+						<div class="col_auto">
+							<div class="box box box_spacing-horizontal">
+								<div class="row">
+									<div class="col_xs-12 col_sm_auto">
+										<ul class="list search__list-start">
+											<li>
+												w <span class="icon icon-assortment"></span> produktach
+											</li>
+
+											<li>
+												w <span class="icon icon-user"></span> klientach
+											</li>
+
+											<li>
+												w <span class="icon icon-producers-dash"></span> producentach
+											</li>
+
+											<li>
+												w <span class="icon icon-cart"></span> zamówieniach
+											</li>
+
+											
+											<li>
+												w <span class="icon icon-help-dash"></span> pomocy
+											</li>
+										</ul>
+									</div>
+									
+									<div class="col_xs-12 col_sm_auto">
+										<ul class="list search__list-start">	
+											<li>
+												w <span class="icon icon-info-pages-dash"></span> stronach informacyjnych
+											</li>
+
+											<li>
+												w <span class="icon icon-drawer"></span> kategoriach
+											</li>
+
+											<li>
+												w <span class="icon icon-blog"></span> artykułach na blogu
+											</li>
+
+											<li>
+												w <span class="icon icon-subscribers-dash"></span> subskrybentach
+											</li>
+
+																							<li>
+													w <span class="icon icon-gear-dash"></span> ustawieniach sklepu
+												</li>
+																					</ul>
+									</div>
+
+									<div class="border-left pl-3 col_grow hidden-sm-down pt-2">
+										<div class="row row_vertical row_hbetween full_height">
+											<div class="col_auto">
+												<p>
+													<span class="size_xl color_light icon icon-info mb-1"></span><br>
+
+													Aby ograniczyć ilość wyników wpisz "-" i słowo które chcesz pominąć. <br><strong>Np. Sukienka -różowa</strong>
+												</p>
+
+											</div>
+											
+											<div class="col_auto">
+												Zobacz więcej 
+<a target="_blank" href="https://www.shoper.pl/help/artykul/wyszukiwarka-w-panelu-administracyjnym/" class="link search__footer-item">
+    o wyszukiwarce
+</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="search__section row row_spacing row_vcenter row_haround js__search__message_error hide">
+						<div class="col_auto">
+							<h4>
+								Ups... wystąpił błąd wyszukiwania
+							</h4>
+
+							<p>
+								Spróbuj
+								
+								<a class="link js__search-refresh-search">
+									<span class="ml-1 mr-1 icon icon-loader"></span>
+									ponów wyszukiwanie
+								</a>
+							</p>
+
+							<p class="mt-4">
+								 Jeśli się nie uda, spróbuj później.
+							</p>
+						</div>
+
+						<figure class="col_auto search__message-icon">
+							<img src="//dcsaascdn.net/aurora/assets/aryman/graphics_shoper/search-image-error.svg">
+						</figure>
+					</div>
+
+					<div class="search__section row row_spacing row_vcenter row_haround js__search__message_no-result hide">
+						<div class="col_auto">
+							<h4>
+								Brak wyników na temat "<span class="js__search-input-value"></span>"
+							</h4>
+
+							<p>
+								Nie poddawaj się!<br>
+								Spróbuj zmienić zapytanie.
+							</p>
+						</div>
+
+						<figure class="col_auto text_center search__message-icon">
+							<img src="//dcsaascdn.net/aurora/assets/aryman/graphics_shoper/search-image-no-exist.svg">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="row search__footer search__item js__search-footer-navigation hide">
+				<div class="col_grow">
+					<div class="box box_secondary box_spacing-s box_clear-margin">
+						<nav class="row row_haround">
+							<div>
+								Wyszukiwarka <span class="search__icon icon icon-key-f"></span>
+							</div>
+							
+							<div>
+								Sterowanie 
+								<span class="size_xxxs icon icon-back icon_rotate-90"></span> 
+								<span class="size_xxxs icon icon-back icon_rotate-neg-90"></span>
+							</div>
+
+							<div>
+								Wybierz <span class="search__icon icon icon-enter"></span> <span class="strong">Enter</span>
+							</div>
+
+							<div>
+								Następna sekcja
+
+								<span class="search__icon icon icon-tab"></span>
+								<span class="strong">Tab</span>
+							</div>
+
+							<div class="hidden-sm-md-down">
+								<a href="" id="link-about-search" aria-label="show about search view" class="link search__footer-item">więcej o wyszukiwarce</a>
+							</div>
+
+							<div class="hidden-sm-md-down">
+								<a href="" id="link-search-back-to" aria-label="back to previous view" class="link search__footer-item hide">
+									wróć do <span class="js__search-back-to-context"></span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="row search__footer search__item js__search-footer-help hide">
+				<div class="col_grow">
+					<div class="box box_secondary box_spacing-s box_clear-margin">
+						Zobacz więcej 
+<a target="_blank" href="https://www.shoper.pl/help/artykul/wyszukiwarka-w-panelu-administracyjnym/" class="link search__footer-item">
+    o wyszukiwarce
+</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</nav>	</div>
+
+	<div class="col_auto hidden-lg-up">
+		<div class="row">
+			<div class="col_grow">
+				<span class="icon color_on-dark-bg ui__header-icon icon-search size_m js__show-search pointer"></span>
+			</div>
+
+			<div class="col_grow">
+				<span class="icon color_light ui__header-icon icon-description size_l js__show-sidebar-menu pointer"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="col_auto hidden-md-down">
+		<div class="row row_vcenter">	
+			<div class="col_auto">
+				<ul class="list list_border-left list_inline list_inline-spacing_s list_inline-vcenter pl-2 pr-2">
+					
+					
+					<li class="color_light">
+						<div class="row row_vcenter">
+							<div class="col_auto">
+								<div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><div class="flex row_vcenter">
+												<span class="marker marker_l marker_v5 marker_round">
+													A
+												</span>
+										
+												<span class="caret"></span>
+											</div></div> <!----> </div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+</header>
+			<!-- Google Tag Manager -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MTHHDW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTHHDW');</script>
+
+<!-- End Google Tag Manager -->    <div class="row panel-message">
+        <div class="col_grow">
+            <div class="box box_spacing-s">
+                <div class="row row_hbetween row_vcenter color_on-dark-bg">
+                    <div class="col_xs-12 col_sm-6 mb-xs-2">
+                        <p class="weight_semibold">
+                            Sklep działa w wersji próbnej (do końca: 8 dni), <a class="color_on-dark-bg" href="/console/plugin/execute/plugin/SaasTrial-License/act/buy">uaktualnij do pełnej wersji</a>.
+                        </p>
+                    </div>
+
+                    <div class="col_xs-12 col_sm-6 align_right align_xs-left">
+                                                    <span class="icon icon-phone mr-1"></span>
+                            <span class="weight_semibold">12 379 32 84</span>
+                        
+                                                    <span class="icon icon-mail ml-4 mr-1"></span>
+                            <a class="link color_on-dark-bg weight_semibold" href="mailto:bok@shoper.pl">
+                                bok@shoper.pl
+                            </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+						
+			
+				    <div class="row">
+        <div class="col_xs-12">
+			<header class="ui__section-header">
+				<div class="row">
+					<div class="col_auto">
+						<a class="link size_s" href="/admin/customers/cancelEdit/id/4">
+								<span class="icon icon-arrow mr-1 icon_rotate-180 size_xs line-height_m"></span><span class="align_middle">przejdź do: Klienci</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="ui__section-title-actions">
+					<div class="col_grow">
+						<div class="row row_vcenter">
+							<div class="col_auto">
+								<h2 class="h3">
+									kamil.duszynski@dreamcommerce.com (id: 4)
+								</h2>
+							</div>
+
+													</div>
+					</div>
+
+					<aside class="col_auto">
+						<div class="row row_vcenter">
+							
+
+							<div class="col_auto">
+								<div class="a-dropdown"><div tabindex="0" role="button" class="a-dropdown__caret"><span class="caret link link_secondary uppercase weight_semibold size_xs">Więcej</span></div> <!----> </div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</header>
+
+			<div class="ui__section-main">
+				<aside class="col_lg-3 col_xs-12 ui__section-sidebar">
+					<div class="ui__section-sidebar-box">
+						<nav class="ui__section-sidebar-content">
+							<ul class="hidden-md-down">
+								<li class="sidemenu__link" tabindex="0" role="button" data-tab-for-current="true" data-tab-for-page="1.1">
+										<span>
+											Dane podstawowe
+										</span>
+								</li>
+
+								<li class="sidemenu__link" tabindex="0" role="button" data-count="0" data-tab-for-current="false" data-tab-for-page="1.2">
+										<span>
+											Dane kontaktowe
+										</span>
+								</li>
+
+								<li class="sidemenu__link" tabindex="0" role="button" data-count="0" data-tab-for-current="false" data-tab-for-page="1.3">
+										<span>
+											Lista zamówień
+										</span>
+								</li>
+
+								<li class="sidemenu__link" tabindex="0" role="button" data-count="0" data-tab-for-current="false" data-tab-for-page="1.4">
+										<span>
+											Zamówione produkty
+										</span>
+								</li>
+
+								<li class="sidemenu__link" tabindex="0" role="button" data-tab-for-current="false" data-tab-for-page="1.5">
+										<span>
+											Statystyka
+										</span>
+								</li>
+
+								
+																	<li class="sidemenu__link" tabindex="0" role="button" data-tab-for-current="false" data-tab-for-page="1.7">
+											<span>
+												Koszyk i przechowalnia
+											</span>
+									</li>
+								
+								<li class="sidemenu__link" tabindex="0" role="button" data-tab-for-current="false" data-tab-for-page="1.8">
+										<span>
+											Wyślij email
+										</span>
+								</li>
+								
+								<li class="sidemenu__link" tabindex="0" role="button" data-tab-for-current="false" data-tab-for-page="1.9">
+										<span>
+											Udostępnij klientowi jego dane
+										</span>
+								</li>
+							</ul>
+
+							<div class="select hidden-lg-up">
+								<select class="control">
+									<option data-tab-for-current="true" data-tab-for-page="1.1">
+											Dane podstawowe
+									</option>
+
+									<option data-tab-for-current="false" data-tab-for-page="1.2">
+											Dane kontaktowe
+									</option>
+
+									<option data-tab-for-current="false" data-tab-for-page="1.3">
+											Lista zamówień
+									</option>
+
+									<option data-tab-for-current="false" data-tab-for-page="1.4">
+											Zamówione produkty
+									</option>
+
+									<option data-tab-for-current="false" data-tab-for-page="1.5">
+											Statystyka
+									</option>
+									
+																		
+																			<option data-tab-for-current="false" data-tab-for-page="1.7">
+												Koszyk i przechowalnia
+										</option>
+																		
+									<option data-tab-for-current="false" data-tab-for-page="1.8">
+											Wyślij email
+									</option>
+
+									<option data-tab-for-current="false" data-tab-for-page="1.9">
+											Udostępnij klientowi jego dane
+									</option>
+								</select>
+							</div>
+						</nav>
+					</div>
+				</aside>
+
+				<section class="col_lg-9 col_xs-12 ui__section-content">
+					<div class="ui__section-content-box">
+						<div data-tab-current="true" data-tab-page="1.1">
+								<form action="/admin/customers/edit/id/4" method="post" novalidate="">
+										<input type="hidden" value="4" name="id">
+
+										<span class="ui__form-legend ui__form-legend_sticky">Informacje podstawowe</span>
+
+										<div class="row row_hcenter">
+											<div class="col_auto">
+												<div class="form_block">
+													<div class="controls">
+														<div class="controls__label">
+															<label class="label label_required" for="email">
+																	Adres email
+															</label>
+
+															<div class="controls__hint hint">
+																<span class="icon icon-help size_m"></span>
+																
+																<div class="hint__content">
+																	unikalny dla każdego klienta
+																</div>														
+															</div>
+														</div>
+
+														<div class="controls__content">
+															<div class="controls__element">
+																<input class="control" type="email" value="kamil.duszynski@dreamcommerce.com" name="email" id="email">
+															</div>
+														</div>
+
+																											</div>
+
+													<div class="controls">
+														<div class="controls__label">
+															<label class="label" for="firstname">
+																	Imię
+															</label>
+														</div>
+
+														<div class="controls__content">
+															<div class="controls__element">
+																<input class="control" type="text" value="" name="firstname" id="firstname">
+															</div>
+														</div>
+
+																											</div>
+
+													<div class="controls">
+														<div class="controls__label">
+															<label class="label " for="lastname">
+																	Nazwisko
+															</label>
+														</div>
+
+														<div class="controls__content">
+															<div class="controls__element">
+																<input class="control" type="text" value="" name="lastname" id="lastname">
+															</div>
+														</div>
+
+																											</div>
+
+																											<div class="controls">
+															<div class="controls__label">
+																<label class="label " for="password">
+																		Hasło
+																</label>
+
+																<div class="controls__hint hint">
+																	<span class="icon icon-help size_m"></span>
+																	
+																	<div class="hint__content">
+																		wypełnij tylko jeżeli chcesz zmienić hasło klienta
+																	</div>														
+																</div>
+															</div>
+
+															<div class="controls__content">
+																<div class="controls__element">
+																	<input class="control" type="password" value="" name="password" id="password">
+																</div>
+															</div>
+
+																													</div>
+													
+													<div class="controls">
+														<div class="controls__label">
+															<label class="label " for="group_id">
+																	Grupa klientów
+															</label>
+														</div>
+
+														<div class="controls__content">
+															<div class="controls__element">
+																<div class="a-dropdown a-select" id="group_id" data-switch-handle="group-name"><div data-test-id="dropdown-toggler" role="button" class="select"><span class="control_select control"><div class="row"><!----> <div class="col_grow"><input type="text" readonly="readonly" id="group_id" class="a-dropdown__input"></div> <!----></div></span></div> <!----> <input type="hidden" name="group_id" value="0"></div>
+
+																<a class="link" href="/admin/groups/list">
+																		zarządzaj grupami
+																</a>
+															</div>
+														</div>
+
+																											</div>
+
+													<div class="controls" data-switch="group-name" data-visibility-switch="false">
+															<div class="controls__label">
+																<label class="label label_required" for="group_name">
+																		nowa grupa klientów
+																</label>
+															</div>
+
+															<div class="controls__content">
+																<div class="controls__element">
+																	<input class="control" type="text" name="group_name" id="group_name">
+																</div>
+															</div>
+
+																												</div>
+
+													<div class="controls">
+                                                        <div class="controls__label">
+                                                            <label class="label " for="tags">
+                                                                    Tagi
+                                                            </label>
+                                                        </div>
+                    
+                                                        <div class="controls__content">
+                                                            <div class="controls__element">
+																<div class="a-tag" id="tags"><!----> <aside class="a-tag__search"><div class="row"><div class="col_grow"><div class="controls"><div class="controls__content controls__content_vcenter"><div class="controls__element controls__element_auto"><input type="text" placeholder="Szukaj" maxlength="30" class="control control_s"></div> <div class="controls__element controls__element_half"><span class="btn btn_s btn_outline">Dodaj</span></div></div> <!----></div></div></div></aside> <ul class="a-tag__list"></ul> </div>
+                                                            </div>
+                                                        </div>
+                
+                                                                                                            </div>
+
+																											<div class="controls">
+															<div class="controls__label">
+																<label class="label " for="discount">
+																		Rabat indywidualny
+																</label>
+															</div>
+
+															<div class="controls__content">
+																<div data-postfix="%" class="controls__element controls__element_quarter controls__element_postfix">
+																		<input class="control" type="text" value="0.00" name="discount" id="discount">
+																</div>
+															</div>
+
+																													</div>
+
+														<div class="controls">
+															<div class="controls__content">
+																<div class="controls__element controls__element_checkbox-switch">
+																	<span class="checkbox-switch">
+																		<input name="verify_email" id="verify_email" class="checkbox-switch__control" type="checkbox" value="1" checked="">
+																		<label class="checkbox-switch__label" for="verify_email"></label>
+																	</span>
+
+																	<label class="label" for="verify_email">
+																			Potwierdzony e-mail
+																	</label>
+																</div>
+															</div>
+															
+															
+																													</div>
+													
+													<div class="controls">
+														<div class="controls__content">
+															<div class="controls__element controls__element_checkbox-switch controls__element_vcenter">
+																<span class="checkbox-switch">
+																	<input name="newsletter" id="newsletter" class="checkbox-switch__control" type="checkbox" value="1">
+																	<label class="checkbox-switch__label" for="newsletter"></label>
+																</span>
+
+																<label class="label" for="newsletter">
+																		Newsletter
+																</label>
+																
+																																	<div class="controls__hint hint">
+																		<span class="icon icon-help size_m"></span>
+																		
+																		<div class="hint__content">
+																			e-mail potwierdzający zostanie wysłany waraz z prośbą o potwierdzenie subskrypcji do newslettera
+																		</div>														
+																	</div>
+																															</div>
+														</div>
+
+																											</div>
+													
+													<div class="controls">
+														<div class="controls__content">
+															<div class="controls__element">
+																<span>
+																	Status konta: 
+																																			<strong>Zarejestrowany</strong>
+																																	<span>
+															</span></span></div>
+														</div>
+													</div>
+
+													<div class="controls">
+														<div class="controls__content">
+															<div class="controls__element">
+																<span>
+																	Data rejestracji: 
+																	<strong>8 grudnia 2021 13:10</strong>
+															</span></div>
+														</div>
+													</div>
+
+													<div class="controls">
+														<div class="controls__label">
+															<label class="label " for="comment">
+																	Uwagi
+															</label>
+														</div>
+
+														<div class="controls__content">
+															<div class="controls__element">
+																<textarea name="comment" id="comment" class="control"></textarea>
+															</div>
+														</div>
+
+																											</div>
+												</div>
+											</div>
+										</div>
+
+																					<span class="ui__form-legend ui__form-legend_sticky">Dodatkowe pola formularzy</span>
+
+											<div class="row row_hcenter">
+												<div class="col_auto">
+													<div class="form_block">
+																																													
+																<div class="controls">
+																	
+																	<div class="controls__content">
+																		<div class="controls__element controls__element_checkbox">
+																			<span class="checkbox">
+<input class="checkbox__control" value="1" type="checkbox" name="additional_1" id="additional_1" checked="checked">
+<label class="checkbox__label" for="additional_1"></label>
+</span>
+
+																																							<label class="label label_required" for="additional_1">
+																						Akceptacja regulaminu
+																				</label>
+																																					</div>
+																	</div>
+
+																																	</div>
+																																										</div>
+												</div>
+											</div>
+										
+										<nav class="form__buttons form__buttons_fixed buttons buttons_hcenter">
+											<button class="btn btn_s btn_outline" type="submit" name="savenquit" value="1">
+													Zapisz i wróć do listy
+												</button>
+
+												<button class="btn btn_s btn_bg" type="submit" name="save" value="1">
+													Zapisz
+											</button>
+										</nav>
+								</form>
+						</div>
+
+						<div class="tab-page" data-tab-current="false" data-tab-page="1.2">
+		<div class="row mb-2">
+			<div class="col_auto">
+				<a href="/admin/address/add/id/4" class="btn btn_bg">
+						dodaj adres
+				</a>
+			</div>
+		</div>
+
+		<div class="ui__section-content-filters">
+			<div class=""><!----></div>
+		</div>
+
+		<div id="address-list">
+    <div class="box box_clear-outer-padding">
+        <table class="table table_with-filters table_zebra full_width">
+            <thead>
+                <tr>
+                    <th>
+                        Firma lub imię i nazwisko
+                    
+                    
+                    </th><th class="cell_xxxl">
+                        Adres
+                    </th>
+                    
+                    <th class="cell_l">
+                        Kod pocztowy
+                    </th>
+                    
+                    <th class="cell_xl">
+                        Miasto
+                    </th>
+                    
+                    <th class="cell_l">
+                        Telefon
+                    </th>
+                    
+                    <th class="cell_l">
+                        Domyślny
+                    </th>
+                    
+                    <th class="cell_l">
+                        Do wysyłki
+                    </th>
+                    
+                    <th class="cell_action">
+                        Akcje
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                					<tr>
+						<td colspan="12">
+							<span class="no-results">
+                                Brak elementów na liście.
+                            </span>
+						</td>
+					</tr>
+                            </tbody>
+
+            <tfoot>
+                
+
+            </tfoot>
+        </table>
+    </div>
+</div>
+</div>						<div class="tab-page" data-tab-current="false" data-tab-page="1.3">
+		<div class="ui__section-content-filters">
+			<div class="aurora-loader"><!----></div>
+		</div>
+
+		<div id="orders-list" class="list aurora-loader"></div>
+</div>						<div class="tab-page" data-tab-current="false" data-tab-page="1.4">
+		<div class="ui__section-content-filters">
+			<div class="aurora-loader"><!----></div>
+		</div>
+
+		<div id="products-list" class="list aurora-loader"></div>
+</div>						<div class="tab-page" data-tab-current="false" data-tab-page="1.5">
+		<div class="row row_vspacing-2">
+			<div class="col_grow">
+				<ul class="list">
+											<li>
+							Data rejestracji: <strong>8 grudnia 2021 13:10</strong>
+						</li>
+										
+											<li>
+							Data ostatniego logowania: <strong>-</strong>
+						</li>
+					
+					<li>
+						Ilość zamówień: <strong>0</strong>
+					</li>
+					
+					<li>
+						Ilość zamówionych pozycji: <strong>0</strong>
+					</li>
+
+					<li>
+						Amount of ordered product: 
+						
+						<ul>
+															<li><strong>brak</strong></li>
+													</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col_grow">
+				<ul class="list">
+					<li>
+						Wartość wszystkich zamówień: <strong>0,00&nbsp;zł</strong>
+					</li>
+					
+					<li>
+						Średnia wartość zamówień: 
+						<strong>
+															0
+													</strong>
+					</li>
+
+					<li>
+						Średnia ilość pozycji w zamówieniu: 
+						<strong>
+															0
+													</strong>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col_grow">
+				<div class="box box_clear-outer-padding">
+					<table class="table table_zebra full_width">
+						<thead>
+							<tr>
+								<th></th>
+
+								<th>
+									Ostatnie 7 dni
+								</th>
+								
+								<th>
+									Ostatnie 30 dni
+								</th>
+								
+								<th>
+									Ostatnie 90 dni
+								</th>
+								
+								<th>
+									Ogółem
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>
+									Ilość zamówień
+								</td>
+
+								<td>
+									0
+								</td>
+								
+								<td>
+									0
+								</td>
+								
+								<td>
+									0
+								</td>
+								
+								<td>
+									0
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									Wartość zamówień
+								</td>
+								
+								<td>
+									0,00&nbsp;zł
+								</td>
+								
+								<td>
+									0,00&nbsp;zł
+								</td>
+								
+								<td>
+									0,00&nbsp;zł
+								</td>
+								
+								<td>
+									0,00&nbsp;zł
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</div>												<div class="tab-page" data-tab-current="false" data-tab-page="1.7">
+		<div class="row">
+			<div class="col_grow">
+				<span class="head_box">Koszyk</span>
+				<div class="aurora-loader"><!----></div>
+
+				<div id="baskets-list" class="list aurora-loader"></div>
+
+				<span class="head_box mt-2">Przechowalnia</span>
+				<div class="aurora-loader"><!----></div>
+
+				<div id="favourites-list" class="list aurora-loader"></div>
+			</div>
+		</div>
+</div>						<div class="tab-page" data-tab-current="false" data-tab-page="1.8">
+		<form data-customers-rodo="" action="/admin/customers/email/id/4" method="post" novalidate="">
+				<input type="hidden" name="content_type" value="1">
+
+				<div class="row row_hcenter">
+					<div class="col_auto">
+						<div class="form_block">
+							<div class="controls">
+								<div class="controls__label">
+									<label class="label label_required" for="title">
+											Temat
+									</label>
+
+									<div class="controls__hint hint">
+										<span class="icon icon-help size_m"></span>
+										
+										<div class="hint__content">
+											Domyślną treść oraz format wiadomości możesz skonfigurować w <a class="link" href="/admin/configEmails/edit/name/mail_client_question">Wygląd i treści » Szablony wiadomości automatycznych » Klient - zapytanie</a>.
+										</div>														
+									</div>
+								</div>
+
+								<div class="controls__content">
+									<div class="controls__element">
+										<input class="control" type="text" value="Zapytanie ze sklepu {shop_name}" name="title" id="title">
+									</div>
+								</div>
+
+															</div>
+
+															<div class="controls">
+									<div class="controls__label">
+										<label class="label label_required" for="email_content">
+												Wiadomość
+										</label>
+									</div>
+
+									<div class="controls__content">
+										<div class="controls__element">
+											<textarea class="control" name="content" id="email_content">weryfikacja znacznika email  {shop_email}  drugi znacznik {email}</textarea>
+										</div>
+									</div>
+
+																	</div>
+							
+													</div>
+					</div>
+				</div>
+
+				<nav class="form__buttons form__buttons_fixed buttons buttons_hcenter">
+					<button class="btn btn_s btn_outline" type="reset">
+							Wyczyść
+					</button>
+
+					<button class="btn btn_s btn_bg" type="submit" value="1">
+							Wyślij
+					</button>
+				</nav>
+		</form>
+</div>						<div class="tab-page" data-tab-current="false" data-tab-page="1.9">
+		<form class="pb-4" action="">
+				<span class="ui__form-legend ui__form-legend_sticky">Udostępnianie archiwum danych zgodnie z wymogami RODO</span>
+
+				<p>
+					Na prośbę klienta należy niezwłocznie udostępnić mu wszystkie jego dane zgromadzone przez sklep. Sprawdź, <span data-modal-content-id="customerDataToShare" class="link js__modal-view">jakie dane otrzyma klient</span>. Jeśli klient ma kilka kont, dla każdego z nich musisz wygenerować archiwum osobno.
+				</p>
+
+				<p>
+					Klient otrzyma e-mail z linkiem do pobrania swoich danych na adres:
+				</p>
+
+				<div class="message-box message-box_light js__rodo-edit-email pointer" data-edit-params="
+						eyJwYXJhbVR5cGUiOiJpbnB1dCIsIm9iamVjdFR5cGUiOiJMb2dpY19Vc2VyIiwib2JqZWN0SWQiOiI0IiwicGFyYW1OYW1lIjoiZW1haWwiLCJwYXJhbVZhbHVlIjoia2FtaWwuZHVzenluc2tpQGRyZWFtY29tbWVyY2UuY29tIiwiZm9yY2VOdWxsIjoiMSIsImhhbmRsZXJNZXRob2QiOiJpbmxpbmVFZGl0SGFuZGxlciIsImZvcm1OYW1lIjoiRm9ybV9BZG1pbl9Vc2VyRW1haWwifQ==">
+								<div class="row row_inner row_vcenter row_hbetween">
+									<div class="col_grow">
+										<span class="js__rodo-customer-email">kamil.duszynski@dreamcommerce.com</span>
+									</div>
+
+									<div class="col_auto">
+										<span class="icon icon-edit"></span>
+									</div>
+								</div>
+				</div>
+
+				<p class="size_s">
+					Dostałeś prośbę przez telefon lub z innego adresu e-mail? Najpierw zweryfikuj tożsamość klienta.
+				</p>
+				
+				<div class="buttons buttons_hcenter">
+											<a href="/admin/customers/archive/id/4" class="btn btn_bg">
+								Udostępnij archiwum klientowi
+						</a>
+									</div>
+
+						</form>
+
+		<template id="customerDataToShare">
+			<header class="modal-window__header">
+				<div class="modal-window__title">
+					<h3>
+						Jakie dane otrzyma klient?
+					</h3>
+				</div>
+
+				<div class="modal-window__header-actions">
+					<span class="js__modal-close pointer icon icon-close"></span>                                                                                                                            
+				</div>
+			</header>
+
+			<section class="modal-window__content">
+				<p>
+					Wśród danych, które trafią do klienta znajdą się także elementy tekstowe, takie jak nazwy grup i tagów, które przypisałeś klientowi. Poniżej pełna lista udostępnianych informacji.
+				</p>
+
+				<span class="h3">
+					Szczegóły zamówień
+				</span>
+
+				<ul class="list size_l ml-4 mb-4">
+					<li>
+						<header data-switch-handle="orders-order-info" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Informacje o zamówieniu</span>
+								</div>
+						</header>
+
+						<ul data-switch="orders-order-info" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>ID zamówienia</li>
+								<li>Data złożenia</li>
+								<li>Źródło zamówienia</li>
+								<li>Data ostatniej zmiany statusu</li>
+								<li>Data potwierdzenia zamówienia</li>
+								<li>Data wysłania</li>
+								<li>Łączna wartość zamówienia</li>
+								<li>Paczkomat</li>
+								<li>Punkt odbioru Poczta Polska</li>
+								<li>Waluta</li>
+								<li>Kurs waluty</li>
+								<li>Metoda płatności</li>
+								<li>Zamówienie złożone jako zarejestrowany klient</li>
+								<li>Forma dostawy</li>
+								<li>Koszt dostawy</li>
+								<li>Adres email klienta</li>
+								<li>Potwierdzenie zamówienia</li>
+								<li>Uwagi klienta</li>
+								<li>Uwagi administratora</li>
+								<li>Kwota wpłaty</li>
+								<li>Adres IP kupującego</li>
+								<li>Rabat indywidualny</li>
+								<li>Grupa cenowa</li>
+								<li>Progi rabatowe</li>
+								<li>Kod rabatowy</li>
+								<li>Kwota podatku Vat wysyłki</li>
+								<li>Zamówienie złożone w języku</li>
+								<li>Kod promocyjny</li>
+								<li>Identyfikator aukcji Allegro</li>
+								<li>Metoda płatności wybrana w Allegro</li>
+								<li>Sposób dostawy wybrany w Allegro</li>
+								<li>Identyfikator transakcji w Allegro</li>
+								<li>Login konta Allegro</li>
+								<li>Pliki dołączone do zamówienia (nazwa pliku)</li>
+								<li>Ścieżka w archiwum</li>
+								<li>Nazwa wariantu</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="orders-order-transaction" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Transakcje do zamówienia</span>
+								</div>
+						</header>
+
+						<ul data-switch="orders-order-transaction" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Metoda płatności</li>
+								<li>Waluta</li>
+								<li>Kurs waluty</li>
+								<li>Kwota transakcji</li>
+								<li>Data transakcji</li>
+								<li>Status transakcji</li>
+								<li>Typ transakcji</li>
+								<li>Komentarz do zwrotu</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="orders-invoice-address" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Adres do faktury</span>
+								</div>
+						</header>
+
+						<ul data-switch="orders-invoice-address" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Nazwa firmy</li>
+								<li>NIP</li>
+								<li>PESEL</li>
+								<li>Nazwa</li>
+								<li>Nazwisko</li>
+								<li>Ulica i numer</li>
+								<li>Ulica i numer cd</li>
+								<li>Miasto</li>
+								<li>Kod pocztowy</li>
+								<li>Województwo</li>
+								<li>Kraj</li>
+								<li>Kod kraju</li>
+								<li>Telefon</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="orders-delivery-address" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Adres wysyłki</span>
+								</div>
+						</header>
+
+						<ul data-switch="orders-delivery-address" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Nazwa firmy</li>
+								<li>NIP</li>
+								<li>PESEL</li>
+								<li>Nazwa</li>
+								<li>Nazwisko</li>
+								<li>Ulica i numer</li>
+								<li>Ulica i numer cd</li>
+								<li>Miasto</li>
+								<li>Kod pocztowy</li>
+								<li>Województwo</li>
+								<li>Kraj</li>
+								<li>Kod kraju</li>
+								<li>Telefon</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="orders-ordered-products" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Zamówione produkty</span>
+								</div>
+						</header>
+
+						<ul data-switch="orders-ordered-products" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Nazwa produktu</li>
+								<li>Kod produktu</li>
+								<li>Ilość</li>
+								<li>Cena</li>
+								<li>Przyznany rabat</li>
+								<li>Cena po rabacie</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="orders-shipments" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Przesyłki</span>
+								</div>
+						</header>
+
+						<ul data-switch="orders-shipments" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Numer przesyłki</li>
+								<li>Data utworzenia przesyłki</li>
+						</ul>
+					</li>
+				</ul>
+
+				<span class="h3">
+					Dane klienta
+				</span>
+
+				<ul class="list size_l ml-4 mb-4">
+					<li>
+						<header data-switch-handle="customer-data" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Informacje o zamówieniu</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-data" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Data utworzenia klienta</li>
+								<li>Źródło rejestracji</li>
+								<li>Ostatnia wizyta</li>
+								<li>Potwierdzenie adresu email</li>
+								<li>Nazwa</li>
+								<li>Nazwisko</li>
+								<li>Email</li>
+								<li>Rabat indywidualny</li>
+								<li>Status konta (aktywność)</li>
+								<li>Wersja językowa</li>
+								<li>Punkty lojalnościowe</li>
+								<li>Grupa klientów</li>
+								<li>Dodatkowe pola</li>
+						</ul>
+					</li>
+					
+					<li>
+						<header data-switch-handle="customer-products-wish-list" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Produkty w przechowalni</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-products-wish-list" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Nazwa produktu</li>
+								<li>Kod produktu</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="customer-abandoned-carts" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Koszyki klientów</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-abandoned-carts" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Nazwa produktu</li>
+								<li>Kod produktu</li>
+								<li>Ilość</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="customer-address" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Adresy</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-address" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Nazwa adresu</li>
+								<li>Nazwa firmy</li>
+								<li>NIP</li>
+								<li>PESEL</li>
+								<li>Nazwa</li>
+								<li>Nazwisko</li>
+								<li>Ulica i numer</li>
+								<li>Ulica i numer cd</li>
+								<li>Miasto</li>
+								<li>Kod pocztowy</li>
+								<li>Województwo</li>
+								<li>Kraj</li>
+								<li>Kod kraju</li>
+								<li>Domyślny do faktur</li>
+								<li>Domyślny do przesyłek</li>
+								<li>Telefon</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="customer-product-reviews" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Opinie o produkcie</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-product-reviews" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Treść opinii o produkcie</li>
+								<li>Nazwa użytkownika</li>
+								<li>Data dodania opinii</li>
+								<li>Status opinii</li>
+								<li>ID produktu</li>
+								<li>Kod produktu</li>
+								<li>Nazwa produktu</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="customer-newsletter" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Newsletter</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-newsletter" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Data dodania do newslettera</li>
+								<li>Grupa subskrybentów</li>
+								<li>Zgoda na newsletter</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="customer-known-sessions" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">Informacje o sesji</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-known-sessions" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Ostatnia aktywność</li>
+								<li>Adres IP</li>
+								<li>Id urządzenia mobilnego</li>
+						</ul>
+					</li>
+
+					<li>
+						<header data-switch-handle="customer-emails" class="row">
+								<div class="col_auto">
+									<span class="color_interactive-1 icon icon-arrow icon_rotate-90 pointer"></span>
+								</div>
+
+								<div class="col_grow">
+									<span class="pointer">E-maile</span>
+								</div>
+						</header>
+
+						<ul data-switch="customer-emails" class="list list_tick size_s ml-4 mt-2" data-visibility-switch="false">
+								<li>Tytuł email</li>
+								<li>Nadawca - nazwa</li>
+								<li>Nadawca - email</li>
+								<li>Treść TXT</li>
+								<li>Treść HTML</li>
+								<li>Typ wiadomości</li>
+								<li>Data wysłania</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</template>
+</div>					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+				
+                </main>
+                
+                <div data-test-class="flash-messenger__message-container" class="flash-messenger"><div></div></div>
+			</div>
+		</div>
+
+        <span class="js__allegro-xhr-run-url" data-allegro-xhr-run-url="/console/plugin/execute/plugin/Allegro-Queue/act/run" data-allegro-xhr-pending-jobs="0" data-allegro-xhr-enable="0">
+</span>
+
+ 
+		<script>
+            $registerScript('/libraries/MooTools/mootools.js', false);
+            
+                        $registerScript('/libraries/AdminPanel/Lang/pl_PL.js?1638796294', false);
+            
+                            $registerScript('/libraries/TinyMCE4/tinymce.min.js?5.0.210611', false);
+                        
+            $registerScript('/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/main.bundle.js?1638796074', false);
+                    </script>
+        
+        
+
+        <div id="aurora"><div class="vue-portal-target"></div></div>
+	
+	<script type="text/javascript" id="">(function(){var a=window,b=a.Intercom;if("function"===typeof b)b("reattach_activator"),b("update",a.intercomSettings);else{var e=document,d=function(){d.c(arguments)};d.q=[];d.c=function(c){d.q.push(c)};a.Intercom=d;b=function(){var c=e.createElement("script");c.type="text/javascript";c.async=!0;c.src="https://widget.intercom.io/widget/r48mou72";var f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(c,f)};a.attachEvent?a.attachEvent("onload",b):a.addEventListener("load",b,!1)}})();</script><script type="text/javascript" id="">$postLaunch(function(){dataLayer.push({event:"admin.ready"})});</script><script src="/libraries/MooTools/mootools.js"></script><script src="/libraries/AdminPanel/Lang/pl_PL.js?1638796294"></script><script src="/libraries/TinyMCE4/tinymce.min.js?5.0.210611"></script><script src="/libraries/AdminPanel/Skins/mitra_shoper_rwd/Js/main.bundle.js?1638796074"></script><div class="modal-wrapper hide"></div><div class="mask hide"></div></body></html>
